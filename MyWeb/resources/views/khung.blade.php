@@ -14,7 +14,7 @@
 	</style>
 </head>
 <body>
-	<script src="p5/p5.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ asset('js/p5/p5.min.js') }}" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 			
 		
@@ -54,7 +54,7 @@ function draw() {
   cone(50, 100, 64, 64);
   pop();
 
-  translate(-240 * 2, 200, 0);
+  translate(-240, 200, 0);
   push();
   rotateZ(QUARTER_PI);
   normalMaterial();
